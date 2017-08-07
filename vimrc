@@ -77,7 +77,7 @@ set wildmenu
 set wildmode=list:longest,full
 set whichwrap=b,s,<,>,[,]
 set foldenable
-set timeoutlen=10
+set timeoutlen=1000
 set clipboard=unnamedplus
 nnoremap <C-Left> :bprev<CR>
 nnoremap <C-Right> :bnext<CR>
@@ -141,3 +141,8 @@ highlight DbgLog ctermfg=241 guifg=#000000
 highlight InfLog ctermfg=223 guifg=#00005f
 highlight WrnLog ctermfg=63 guifg=#00005f
 highlight ErrLog ctermfg=126 guifg=#00005f
+
+"copy + reg into *
+:command Cpreg let @*=@+
+"use black hole register
+:map <leader>b "_
