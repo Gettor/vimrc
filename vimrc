@@ -22,6 +22,8 @@ Plugin 'ervandew/supertab'
 Plugin 'vim-scripts/Mark--Karkat'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'majutsushi/tagbar'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'a.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -44,7 +46,7 @@ syntax enable
 set t_Co=256
 
 set cursorline
-set number
+set number relativenumber
 set nowrap
 set autoread
 set tabstop=4       " a tab is four spaces
@@ -79,6 +81,7 @@ set whichwrap=b,s,<,>,[,]
 set foldenable
 set timeoutlen=1000
 set clipboard=unnamedplus
+set scrolloff=999
 nnoremap <C-Left> :bprev<CR>
 nnoremap <C-Right> :bnext<CR>
 map <2-leftmouse> \m
